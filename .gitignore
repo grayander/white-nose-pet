@@ -1,0 +1,14 @@
+# Local settings and runtime diagnostics
+/data/
+
+# Development and temporary files
+.vs/
+.vscode/
+obj/
+bin/
+*.user
+*.suo
+*.log
+*.tmp
+Thumbs.db
+desktop.ini

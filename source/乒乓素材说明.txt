@@ -1,0 +1,19 @@
+新增素材：assets/pingpong-atlas.png
+制作方式：Codex 内置 imagegen。程序运行时无需 Codex 或任何网络服务。
+依据：用户提供的两段乒乓 GIF 的动作节奏，以及用户纠正后的要求：原大头造型、不穿红衣、只到单手撑地、坚定带痞气的眼神。
+动作共 6 个关键姿态，程序补充横移、重心变化、旋转、回弹及击球轨迹。
+未采用之前的红衣/侧躺候选素材。
+
+最终素材提示词：
+Use case: identity-preserve. Create SIX transparent sprite poses for the EXACT whimsical anthropomorphic HEAD mascot in the reference image. This is a giant floating head with tiny cartoon hands and feet attached directly to the head, like a 3D emoji toy. Keep that exact anatomy and original identity: large messy black hair, white spherical foam nose, same realistic face, tiny mitten hands, tiny rounded feet. Head ONLY mascot, no torso, no clothes, no sports uniform, no shoes, no added human body.
+Expression in ALL SIX poses: intensely focused eyes looking forward at the game, alert pupils, slightly lowered determined brows, restrained confident crooked smirk, cool defiant swagger. NO wide open mouth, NO sleepy eyes, NO dazed or panicked look.
+Small red table tennis paddle held by the same tiny hand in every pose.
+Exactly THREE columns and TWO rows in 1536x1024 transparent RGBA canvas. Each equal square cell is 512x512. All head, paddle, fingers and feet must be inside a 420x420 area centered horizontally in its own cell, with 46 pixels transparent side margins. SAME head size around 320px wide across all poses. Ground contact at y=460 in each cell; low poses naturally have extra space above. No cell overlap, no text, no backgrounds, no grid, no shadows. True alpha transparency.
+Six poses in reading order:
+1 READY: head upright, small feet apart, paddle held low and forward, intensely focused cocky smirk.
+2 WINDUP: head turns three-quarter sideways, one tiny paddle arm drawn back and upward beside cheek, tiny feet brace apart.
+3 EXPLOSIVE STROKE: head leans forward 12 degrees, paddle arm sweeping across in front, tiny feet spread dynamically.
+4 LOW LUNGE: head leaning sideways about 20 degrees, one small foot extends sideways, free palm reaching toward floor, paddle follows stroke.
+5 SIGNATURE ONE-HAND FLOOR BRACE: low head tilted only 25 degrees, free hand palm FLAT firmly on floor supporting the head creature, tiny feet still contact floor, paddle hand held off ground; face alert and determined, looking forward. It is a controlled crouching hand-brace after a powerful stroke. Head and cheek do NOT touch ground. NO lying sideways, NO sprawled fall, NO somersault.
+6 RISE: palm pushing from floor as head rises to upright, tiny feet returning beneath head, determined confident smirk.
+Beautiful photoreal 3D toy rendering matching input. The essential action is powerful table tennis swing -> low one-hand floor brace -> prompt recovery. Preserve white foam nose, hairstyle and mascot proportions.

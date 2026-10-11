@@ -1,0 +1,15 @@
+素材：assets/pingpong-atlas.png
+制作方式：内置 imagegen，根据用户重新提供的角色多视图和人像参考，对原乒乓动作图集进行面部一致性修正。
+保留动作、白鼻子、球拍、小手小脚和透明背景；校准脸型、眼睛、自然眉形、嘴角、面部小痣和头发。
+原有挥手、跳跃、吐舌头、撑地回位和气泡轮换功能保留。
+
+最终编辑提示词：
+Use case: identity-preserve. Precise facial correction to an existing transparent desktop mascot sprite atlas.
+INPUT ROLES:
+Image 1 is the PRIMARY character identity reference, especially its front and side views. All six output faces MUST recognizably be this exact same individual and match the default mascot.
+Image 2 is a supporting real facial likeness reference: facial proportions, narrow eyelid shape, long midface, mouth corners, prominent ears. Do NOT copy its shirt, closed eyes or tongue-out expression into the sports poses.
+Image 3 is the EDIT TARGET, an existing 1536x1024 RGBA atlas of six table tennis poses. The current faces in this image look like a different, idealized handsome person. Correct this.
+CHANGE ONLY the face and hair likeness in all six sprites of image 3 to match image 1 accurately. Preserve the pose silhouette, hand positions, little feet, white foam nose, paddle, same lighting and photorealistic rendering, exact sprite centers and sizes, three columns two rows, and existing true alpha transparency. No new body, clothes, court or text.
+FACIAL IDENTITY REQUIREMENTS: copy image 1's more elongated less idealized face, narrow natural jaw and longer chin, cheek contour, naturally asymmetric eye shape and spacing, thinner softer natural eyebrows, broader characteristic mouth and subtly uneven cheek creases. Preserve the characteristic tiny facial skin marks/moles of image1. Match the original irregular shaggy black hair and fringe rather than a redesigned styled haircut. White spherical nose unchanged. Do not beautify, smooth skin, enlarge eyes, make a V-shaped model jaw, add thick sharply slanting superhero brows, or turn him into another generic handsome athlete.
+EXPRESSION: focused alert gaze and a restrained mischievous grin, subtle and true to the reference. Personality comes from eye direction and small mouth-corner asymmetry, NOT by changing facial structure. No dazed or sleepy eyes, no melodramatic angry brow. It is fine to show a little of his distinctive toothy grin like image1 while keeping concentration.
+Keep the six exact action poses and ground height in Image3: ready / windup / stroke / low lunge / one free palm bracing on floor / rising. No lying down. Output exactly 1536x1024 with true transparent RGBA background. Nothing touching or crossing between sprites. This is a likeness correction, not a character redesign.

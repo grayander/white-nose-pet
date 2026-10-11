@@ -1,0 +1,19 @@
+素材：assets/pet-atlas.png
+制作方式：Codex 内置 imagegen 工具，透明背景。
+此目录中的程序独立运行，不调用图像生成工具或任何远程服务。
+
+提示词：
+Use case: identity-preserve. Asset type: transparent sprite atlas for a standalone Windows desktop pet.
+Image 1 is the CHARACTER reference: the exact funny photorealistic 3D big head with messy black hair, white round foam nose and two tiny bare feet, no torso. Preserve recognizably the same face, skin, hair, white nose, head/feet proportions. Add two tiny rounded skin-colored cartoon arms/hands at lower sides so it can wave.
+Image 2 is ONLY an expression reference: closed eyes and mischievous tongue sticking out toward one side. Do not copy shirt or body.
+Create ONE atlas with exactly FOUR columns and TWO rows, eight equal rectangular cells, transparent RGBA background. Each sprite fits entirely inside its cell with generous transparent margin, never crosses borders. Same character scale and foot baseline in every cell, no ground shadows, no text, no labels, no borders, no checkerboard drawn into image.
+Reading order:
+row 1 col 1: front view smiling, arms relaxed, idle;
+row 1 col 2: same front view waving, right hand raised OUTWARD (viewer left), open palm;
+row 1 col 3: same front view waving, same hand raised INWARD nearer cheek, open palm, clearly different hand angle for alternating wave animation;
+row 1 col 4: front view CLOSED EYES and mischievous TONGUE STICKING OUT to one side as in second reference, white foam nose stays.
+row 2 col 1: three-quarter facing viewer LEFT, little walking pose;
+row 2 col 2: three-quarter facing viewer RIGHT, little walking pose;
+row 2 col 3: front view peacefully sleeping, both eyes closed, relaxed smile, arms resting;
+row 2 col 4: front view delighted, both tiny hands lifted, feet slightly apart for jump pose.
+Match realism and identity of first reference, toy-like surreal head creature, beautiful detailed hair. Each figure isolated on true alpha transparency. Canvas landscape 3:2, precisely aligned 4x2 grid.
